@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="model.VendaServiceTest" time="0.781" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="model.VendaServiceTest" time="1.134" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\trabalhoSistemadeVendas\target\test-classes;D:\trabalhoSistemadeVendas\target\classes;C:\Users\rafae\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.4\junit-jupiter-api-5.13.4.jar;C:\Users\rafae\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\rafae\.m2\repository\org\junit\platform\junit-platform-commons\1.13.4\junit-platform-commons-1.13.4.jar;C:\Users\rafae\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\rafae\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.13.4\junit-jupiter-engine-5.13.4.jar;C:\Users\rafae\.m2\repository\org\junit\platform\junit-platform-engine\1.13.4\junit-platform-engine-1.13.4.jar;C:\Users\rafae\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.4\junit-jupiter-params-5.13.4.jar;C:\Users\rafae\.m2\repository\org\mockito\mockito-junit-jupiter\5.13.0\mockito-junit-jupiter-5.13.0.jar;C:\Users\rafae\.m2\repository\org\mockito\mockito-core\5.13.0\mockito-core-5.13.0.jar;C:\Users\rafae\.m2\repository\net\bytebuddy\byte-buddy\1.15.0\byte-buddy-1.15.0.jar;C:\Users\rafae\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar;C:\Users\rafae\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
+    <property name="java.class.path" value="D:\Facul\projects\Trabalhosistemadevendas\trabalhoSistemadeVendas\target\test-classes;D:\Facul\projects\Trabalhosistemadevendas\trabalhoSistemadeVendas\target\classes;C:\Users\kenji\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.4\junit-jupiter-api-5.13.4.jar;C:\Users\kenji\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kenji\.m2\repository\org\junit\platform\junit-platform-commons\1.13.4\junit-platform-commons-1.13.4.jar;C:\Users\kenji\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kenji\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.13.4\junit-jupiter-engine-5.13.4.jar;C:\Users\kenji\.m2\repository\org\junit\platform\junit-platform-engine\1.13.4\junit-platform-engine-1.13.4.jar;C:\Users\kenji\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.4\junit-jupiter-params-5.13.4.jar;C:\Users\kenji\.m2\repository\org\mockito\mockito-junit-jupiter\5.13.0\mockito-junit-jupiter-5.13.0.jar;C:\Users\kenji\.m2\repository\org\mockito\mockito-core\5.13.0\mockito-core-5.13.0.jar;C:\Users\kenji\.m2\repository\net\bytebuddy\byte-buddy\1.15.0\byte-buddy-1.15.0.jar;C:\Users\kenji\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar;C:\Users\kenji\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -14,66 +14,65 @@
     <property name="java.vm.specification.version" value="21"/>
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\rafae\AppData\Local\Temp\surefire7742486445680907350\surefirebooter-20250914150044568_3.jar C:\Users\rafae\AppData\Local\Temp\surefire7742486445680907350 2025-09-14T15-00-44_497-jvmRun1 surefire-20250914150044568_1tmp surefire_0-20250914150044568_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.4\bin"/>
+    <property name="sun.java.command" value="C:\Users\kenji\AppData\Local\Temp\surefire4391763769481612471\surefirebooter-20250916193107452_3.jar C:\Users\kenji\AppData\Local\Temp\surefire4391763769481612471 2025-09-16T19-31-07_321-jvmRun1 surefire-20250916193107452_1tmp surefire_0-20250916193107452_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="model.VendaServiceTest"/>
-    <property name="surefire.test.class.path" value="D:\trabalhoSistemadeVendas\target\test-classes;D:\trabalhoSistemadeVendas\target\classes;C:\Users\rafae\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.4\junit-jupiter-api-5.13.4.jar;C:\Users\rafae\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\rafae\.m2\repository\org\junit\platform\junit-platform-commons\1.13.4\junit-platform-commons-1.13.4.jar;C:\Users\rafae\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\rafae\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.13.4\junit-jupiter-engine-5.13.4.jar;C:\Users\rafae\.m2\repository\org\junit\platform\junit-platform-engine\1.13.4\junit-platform-engine-1.13.4.jar;C:\Users\rafae\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.4\junit-jupiter-params-5.13.4.jar;C:\Users\rafae\.m2\repository\org\mockito\mockito-junit-jupiter\5.13.0\mockito-junit-jupiter-5.13.0.jar;C:\Users\rafae\.m2\repository\org\mockito\mockito-core\5.13.0\mockito-core-5.13.0.jar;C:\Users\rafae\.m2\repository\net\bytebuddy\byte-buddy\1.15.0\byte-buddy-1.15.0.jar;C:\Users\rafae\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar;C:\Users\rafae\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
+    <property name="surefire.test.class.path" value="D:\Facul\projects\Trabalhosistemadevendas\trabalhoSistemadeVendas\target\test-classes;D:\Facul\projects\Trabalhosistemadevendas\trabalhoSistemadeVendas\target\classes;C:\Users\kenji\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.4\junit-jupiter-api-5.13.4.jar;C:\Users\kenji\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kenji\.m2\repository\org\junit\platform\junit-platform-commons\1.13.4\junit-platform-commons-1.13.4.jar;C:\Users\kenji\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kenji\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.13.4\junit-jupiter-engine-5.13.4.jar;C:\Users\kenji\.m2\repository\org\junit\platform\junit-platform-engine\1.13.4\junit-platform-engine-1.13.4.jar;C:\Users\kenji\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.4\junit-jupiter-params-5.13.4.jar;C:\Users\kenji\.m2\repository\org\mockito\mockito-junit-jupiter\5.13.0\mockito-junit-jupiter-5.13.0.jar;C:\Users\kenji\.m2\repository\org\mockito\mockito-core\5.13.0\mockito-core-5.13.0.jar;C:\Users\kenji\.m2\repository\net\bytebuddy\byte-buddy\1.15.0\byte-buddy-1.15.0.jar;C:\Users\kenji\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar;C:\Users\kenji\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\rafae"/>
+    <property name="user.home" value="C:\Users\kenji"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2024-01-16"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.4"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\trabalhoSistemadeVendas"/>
+    <property name="basedir" value="D:\Facul\projects\Trabalhosistemadevendas\trabalhoSistemadeVendas"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\rafae\AppData\Local\Temp\surefire7742486445680907350\surefirebooter-20250914150044568_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kenji\AppData\Local\Temp\surefire4391763769481612471\surefirebooter-20250916193107452_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
-    <property name="user.name" value="rafae"/>
+    <property name="java.runtime.version" value="21.0.4+8-LTS-274"/>
+    <property name="user.name" value="kenji"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-23\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
-    <property name="localRepository" value="C:\Users\rafae\.m2\repository"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-24\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\kenji\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\rafae\AppData\Local\Temp\"/>
-    <property name="java.version" value="21.0.2"/>
-    <property name="user.dir" value="D:\trabalhoSistemadeVendas"/>
+    <property name="java.io.tmpdir" value="C:\Users\kenji\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.dir" value="D:\Facul\projects\Trabalhosistemadevendas\trabalhoSistemadeVendas"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\UNIVALI\Portugol Studio;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\rafae\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;D:\IntelliJ IDEA 2023.2.5\bin;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;D:\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\rafae\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\rafae\AppData\Local\Programs\Python\Python313\;C:\Users\rafae\AppData\Local\Programs\Python\Launcher\;C:\Users\rafae\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;D:\IntelliJ IDEA 2023.2.5\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python313\Scripts\;C:\Python313\;C:\orant\BIN;C:\Python312\Scripts\;C:\Python312\;C:\ffmpeg\bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Users\kenji\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\kenji\AppData\Local\Programs\Python\Python311\;C:\Users\kenji\AppData\Local\Microsoft\WindowsApps;C:\Users\kenji\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kenji\.dotnet\tools;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\ProgramData\chocolatey\bin;C:\ProgramData\UNIVALI\Portugol Studio;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\kenji\apache-maven-3.9.6\bin\;C:\Program Files\Java\jdk-23\bin\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\CMake\bin;C:\Users\kenji\lua-language-server\bin\;C:\Program Files\Neovim\bin;C:\Program Files\WezTerm;C:\Program Files\GitHub CLI\;C:\Program Files (x86)\cloudflared\;C:\Program Files\PostgreSQL\16\bin;C:\Program Files\Docker\Docker\resources\bin;C:\instantclient_23_5;C:\Users\kenji\AppData\Local\nvm;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\wildfly-35.0.1.Final;C:\Program Files\PowerShell\7\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kenji\AppData\Local\Microsoft\WindowsApps;C:\Users\kenji\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kenji\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.4\bin;C:\tools\neovim\nvim-win64\bin;C:\Users\kenji\AppData\Local\Microsoft\WinGet\Packages\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\ripgrep-14.1.1-x86_64-pc-windows-msvc;C:\Users\kenji\AppData\Local\Microsoft\WinGet\Packages\sharkdp.fd_Microsoft.Winget.Source_8wekyb3d8bbwe\fd-v10.2.0-x86_64-pc-windows-msvc;C:\Users\kenji\AppData\Local\Microsoft\WinGet\Packages\jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\ProgramData\mingw64\mingw64\bin;C:\Users\kenji\.deno\bin;C:\Users\kenji\AppData\Local\Microsoft\WinGet\Packages\Nethack.Nethack_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\kenji\AppData\Local\nvm;C:\Program Files\nodejs;C:\Users\kenji\AppData\Local\Microsoft\WindowsApps;C:\Users\kenji\dev\flutter\bin;C:\Program Files\JetBrains\WebStorm 2025.2\bin;C:\Users\kenji\.dotnet\tools;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="21.0.2+13-LTS-58"/>
+    <property name="java.vm.version" value="21.0.4+8-LTS-274"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="deveFalharVendaPorEstoqueInsuficiente" classname="model.VendaServiceTest" time="0.74">
-    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\rafae\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar)
+  <testcase name="deveFalharVendaPorEstoqueInsuficiente" classname="model.VendaServiceTest" time="1.086">
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\kenji\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.0\byte-buddy-agent-1.15.0.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 Estoque insuficiente para o produto: Teclado Mecânico
 ]]></system-err>
   </testcase>
-  <testcase name="deveAplicarDescontoCorretamente" classname="model.VendaServiceTest" time="0.012"/>
-  <testcase name="deveManterValorOriginalComDescontoZero" classname="model.VendaServiceTest" time="0.003"/>
-  <testcase name="deveConcluirVendaComPagamentoAprovado" classname="model.VendaServiceTest" time="0.004"/>
-  <testcase name="deveTratarExcecaoDoServicoDePagamento" classname="model.VendaServiceTest" time="0.005">
+  <testcase name="deveAplicarDescontoCorretamente" classname="model.VendaServiceTest" time="0.021"/>
+  <testcase name="deveManterValorOriginalComDescontoZero" classname="model.VendaServiceTest" time="0.004"/>
+  <testcase name="deveConcluirVendaComPagamentoAprovado" classname="model.VendaServiceTest" time="0.006"/>
+  <testcase name="deveTratarExcecaoDoServicoDePagamento" classname="model.VendaServiceTest" time="0.01">
     <system-err><![CDATA[Ocorreu um erro ao processar o pagamento: Gateway de pagamento fora do ar
 ]]></system-err>
   </testcase>
-  <testcase name="deveFalharVendaComPagamentoRecusado" classname="model.VendaServiceTest" time="0.002"/>
+  <testcase name="deveFalharVendaComPagamentoRecusado" classname="model.VendaServiceTest" time="0.003"/>
 </testsuite>

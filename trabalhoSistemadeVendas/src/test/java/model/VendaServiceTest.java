@@ -1,5 +1,7 @@
 package model;
 
+import com.unipar.trabalhosistemadevendas.model.Produto;
+import com.unipar.trabalhosistemadevendas.model.CarrinhoDeCompras;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -16,18 +18,16 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import org.mockito.junit.jupiter.MockitoExtension;
-import service.DescontoService;
-import service.NotaFiscalService;
-import service.PagamentoService;
-import service.VendaService;
+import com.unipar.trabalhosistemadevendas.service.DescontoService;
+import com.unipar.trabalhosistemadevendas.service.NotaFiscalService;
+import com.unipar.trabalhosistemadevendas.service.PagamentoService;
+import com.unipar.trabalhosistemadevendas.service.VendaService;
 
 /**
- *
- * @author rafae
+ * @author Rafael, Kenji
  */
 @ExtendWith(MockitoExtension.class)
 class VendaServiceTest {
-
     @Mock
     private DescontoService descontoServiceMock;
     @Mock
@@ -49,33 +49,30 @@ class VendaServiceTest {
         produtoSemEstoque = new Produto(2, "Monitor 4K", 2000.0, 0);
     }
 
-
     @Test
     void deveAplicarDescontoCorretamente() {
-        carrinho.adicionarProduto(produtoComEstoque, 1); 
-        double valorComDesconto = 315.0; 
-        
+        carrinho.adicionarProduto(produtoComEstoque, 1);
+        double valorComDesconto = 315.0;
+
         when(descontoServiceMock.aplicarDesconto(350.0)).thenReturn(valorComDesconto);
         when(pagamentoServiceMock.processarPagamento(valorComDesconto)).thenReturn(true);
 
         vendaService.realizarVenda(carrinho);
 
-        
         verify(pagamentoServiceMock).processarPagamento(valorComDesconto);
     }
-    
+
     @Test
     void deveManterValorOriginalComDescontoZero() {
-        carrinho.adicionarProduto(produtoComEstoque, 2); 
-        
+        carrinho.adicionarProduto(produtoComEstoque, 2);
+
         when(descontoServiceMock.aplicarDesconto(700.0)).thenReturn(700.0);
         when(pagamentoServiceMock.processarPagamento(700.0)).thenReturn(true);
-        
+
         vendaService.realizarVenda(carrinho);
-        
+
         verify(pagamentoServiceMock).processarPagamento(700.0);
     }
-    
 
     @Test
     void deveFalharVendaPorEstoqueInsuficiente() {
@@ -84,27 +81,26 @@ class VendaServiceTest {
         boolean resultado = vendaService.realizarVenda(carrinho);
 
         assertFalse(resultado);
-        
+
         verify(pagamentoServiceMock, never()).processarPagamento(anyDouble());
         verify(notaFiscalServiceMock, never()).emitirNota(anyDouble(), anyList());
     }
 
-    
     @Test
     void deveConcluirVendaComPagamentoAprovado() {
         carrinho.adicionarProduto(produtoComEstoque, 5);
         int estoqueOriginal = produtoComEstoque.getEstoque();
-        
+
         when(descontoServiceMock.aplicarDesconto(anyDouble())).thenReturn(1750.0);
         when(pagamentoServiceMock.processarPagamento(1750.0)).thenReturn(true);
-        
+
         boolean resultado = vendaService.realizarVenda(carrinho);
-        
+
         assertTrue(resultado);
         assertEquals(estoqueOriginal - 5, produtoComEstoque.getEstoque(), "O estoque deve ser reduzido.");
-        verify(notaFiscalServiceMock, times(1)).emitirNota(eq(1750.0), anyList());
+        verify(notaFiscalServiceMock).emitirNota(eq(1750.0), anyList());
     }
-    
+
     @Test
     void deveFalharVendaComPagamentoRecusado() {
         carrinho.adicionarProduto(produtoComEstoque, 5);
@@ -119,14 +115,14 @@ class VendaServiceTest {
         assertEquals(estoqueOriginal, produtoComEstoque.getEstoque(), "O estoque não deve ser alterado.");
         verify(notaFiscalServiceMock, never()).emitirNota(anyDouble(), anyList());
     }
-    
+
     @Test
     void deveTratarExcecaoDoServicoDePagamento() {
         carrinho.adicionarProduto(produtoComEstoque, 1);
         int estoqueOriginal = produtoComEstoque.getEstoque();
 
         when(descontoServiceMock.aplicarDesconto(anyDouble())).thenReturn(350.0);
-        
+
         when(pagamentoServiceMock.processarPagamento(350.0))
             .thenThrow(new RuntimeException("Gateway de pagamento fora do ar"));
 

@@ -1,9 +1,8 @@
-package model;
+package com.unipar.trabalhosistemadevendas.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 
 public class CarrinhoDeCompras {
     private final List<ItemCarrinho> itens = new ArrayList<>();
@@ -28,7 +27,6 @@ public class CarrinhoDeCompras {
     }
 
     public List<ItemCarrinho> getItens() {
-        
         return Collections.unmodifiableList(itens);
     }
     

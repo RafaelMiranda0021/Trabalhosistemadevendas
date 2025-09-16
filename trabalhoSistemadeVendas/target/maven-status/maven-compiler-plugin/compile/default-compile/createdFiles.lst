@@ -1,8 +1,8 @@
-service\NotaFiscalService.class
 com\unipar\trabalhosistemadevendas\TrabalhoSistemadeVendas.class
-model\ItemCarrinho.class
-service\DescontoService.class
-model\Produto.class
-service\VendaService.class
-model\CarrinhoDeCompras.class
-service\PagamentoService.class
+com\unipar\trabalhosistemadevendas\service\VendaService.class
+com\unipar\trabalhosistemadevendas\model\CarrinhoDeCompras.class
+com\unipar\trabalhosistemadevendas\service\DescontoService.class
+com\unipar\trabalhosistemadevendas\model\ItemCarrinho.class
+com\unipar\trabalhosistemadevendas\service\PagamentoService.class
+com\unipar\trabalhosistemadevendas\model\Produto.class
+com\unipar\trabalhosistemadevendas\service\NotaFiscalService.class

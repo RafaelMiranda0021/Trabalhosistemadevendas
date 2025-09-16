@@ -1,8 +1,6 @@
-package model;
-
+package com.unipar.trabalhosistemadevendas.model;
 
 public class ItemCarrinho {
-    
     private final Produto produto;
     private final int quantidade;
 
@@ -22,5 +20,4 @@ public class ItemCarrinho {
     public double getSubtotal() {
         return produto.getPreco() * quantidade;
     }
-    
 }

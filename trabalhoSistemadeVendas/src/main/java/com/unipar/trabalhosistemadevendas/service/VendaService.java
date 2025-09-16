@@ -1,10 +1,10 @@
-package service;
+package com.unipar.trabalhosistemadevendas.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import model.CarrinhoDeCompras;
-import model.ItemCarrinho;
-import model.Produto;
+import com.unipar.trabalhosistemadevendas.model.CarrinhoDeCompras;
+import com.unipar.trabalhosistemadevendas.model.ItemCarrinho;
+import com.unipar.trabalhosistemadevendas.model.Produto;
 
 public class VendaService {
     private final DescontoService descontoService;
@@ -18,7 +18,6 @@ public class VendaService {
     }
 
     public boolean realizarVenda(CarrinhoDeCompras carrinho) {
-        
         for (ItemCarrinho item : carrinho.getItens()) {
             if (item.getProduto().getEstoque() < item.getQuantidade()) {
                 System.err.println("Estoque insuficiente para o produto: " + item.getProduto().getNome());
@@ -26,38 +25,28 @@ public class VendaService {
             }
         }
 
-        
         double total = carrinho.calcularTotal();
-        
-        
         double valorComDesconto = descontoService.aplicarDesconto(total);
 
         try {
-            
             boolean pagamentoAprovado = pagamentoService.processarPagamento(valorComDesconto);
 
-            
-            if (pagamentoAprovado) {
-                
-                for (ItemCarrinho item : carrinho.getItens()) {
-                    item.getProduto().reduzirEstoque(item.getQuantidade());
-                }
+            if (!pagamentoAprovado) return false;
 
-                
-                List<Produto> produtosVendidos = carrinho.getItens().stream()
-                        .map(ItemCarrinho::getProduto)
-                        .collect(Collectors.toList());
-                notaFiscalService.emitirNota(valorComDesconto, produtosVendidos);
-
-                return true; 
-            } else {
-                return false; 
+            for (ItemCarrinho item : carrinho.getItens()) {
+                item.getProduto().reduzirEstoque(item.getQuantidade());
             }
+
+            List<Produto> produtosVendidos = carrinho.getItens().stream()
+                    .map(ItemCarrinho::getProduto)
+                    .collect(Collectors.toList());
+            notaFiscalService.emitirNota(valorComDesconto, produtosVendidos);
+
+            return true;
         } catch (RuntimeException e) {
-            
             System.err.println("Ocorreu um erro ao processar o pagamento: " + e.getMessage());
-            return false;
         }
+
+        return false;
     }
-    
 }

@@ -1,4 +1,4 @@
-package model;
+package com.unipar.trabalhosistemadevendas.model;
 
 public class Produto {
     private int id;
@@ -13,7 +13,6 @@ public class Produto {
         this.estoque = estoque;
     }
 
-    
     public boolean reduzirEstoque(int quantidade) {
         if (this.estoque >= quantidade) {
             this.estoque -= quantidade;
@@ -53,12 +52,4 @@ public class Produto {
     public void setEstoque(int estoque) {
         this.estoque = estoque;
     }
-    
-    
-    
 }
-
-    
-    
-    
-
